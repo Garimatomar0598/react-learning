@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState } from 'react'
 import './App.css'
+import UserContext from './Context/UserContext'
+import Login from './Components/Login'
+import Profile from './Components/Profile'
 
 function App() {
-  const [count, setCount] = useState(0)
 
+  const [user, setUser] = useState(null);
   return (
-    <>
-      <h1 className='bg-red-500 text-2xl'>React context API learning</h1>
-    </>
+ 
+      <UserContext.Provider value={{ user, setUser }}>
+<Login/>
+<Profile/>
+      
+      </UserContext.Provider>
+    
   )
 }
 
