@@ -2,12 +2,16 @@
 import React from 'react';
 
 function Test(){
-    const headingtest ={
-        color:"red",
-        fontSize:"40px"
-    }
+    
 
-    return<h1 style={headingtest}>Test done</h1>
+const handleInput=(event)=>{
+    console.clear()
+console.log("value : ",event.target.value)
+}
+
+   return(
+    <input  type='text' onChange={handleInput} placeholder='type your message' />
+   )
 }
 
 export default Test;
