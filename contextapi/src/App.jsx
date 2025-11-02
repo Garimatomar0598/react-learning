@@ -4,6 +4,7 @@ import UserContext from './Context/UserContext'
 import Login from './Components/Login'
 import Profile from './Components/Profile'
 import Test from './Test'
+import Loggedin from './Loggedin'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 <Login/>
 <Profile/>
 <Test />
+<Loggedin />
       
       </UserContext.Provider>
     
