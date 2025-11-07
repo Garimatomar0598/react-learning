@@ -16,7 +16,7 @@ console.log("Email:", email)
     <div>
     <form  onSubmit={handleSubmit}  >
 
-<h2>Form Hnadling Understanding</h2>
+<h2>Form Handling Understanding</h2>
       <label>Name:</label>
       <input type='text' value={name} onChange={(e)=>setName(e.target.value)}     />
       <br />
