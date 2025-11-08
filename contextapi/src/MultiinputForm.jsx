@@ -5,6 +5,11 @@ const [formData,setFormData] = useState({
     name:"",
     email:"",
     age:"",
+    phone: "",
+    gender:"",
+    city:"",
+    
+    
 })
 
 const handleSubmit = (e)=>{
@@ -25,6 +30,7 @@ setFormData((prev)=>({
   return (
     <div>
       <h2>Multiple Forms in React</h2>
+      <br />
       <form onSubmit={handleSubmit}>
         <input name="name" type="text" placeholder="Name"
         value={formData.name}
@@ -35,6 +41,22 @@ setFormData((prev)=>({
          value={formData.email}
         onChange={handleChange} />
         <br />
+
+                <input name="phone" type="number" placeholder="phone"
+         value={formData.phone}
+        onChange={handleChange} />
+        <br />
+
+        <input name="gender" type="text" placeholder="gender"
+         value={formData.gender}
+        onChange={handleChange} />
+        <br />
+
+                <input name="city" type="text" placeholder="city"
+         value={formData.city}
+        onChange={handleChange} />
+        <br />
+       
         <input name="age" type="number" placeholder="Age"
          value={formData.age}
         onChange={handleChange}/>
