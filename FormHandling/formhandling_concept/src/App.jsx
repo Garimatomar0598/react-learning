@@ -1,11 +1,11 @@
 
 import React from 'react'
-import FormCheckbox from './FormCheckbox'
+import BasicValidation from './BasicValidation'
 
 function App() {
   return (
     <div>
-<FormCheckbox />
+    <BasicValidation />
     </div>
   )
 }
