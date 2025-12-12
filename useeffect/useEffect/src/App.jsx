@@ -10,7 +10,7 @@ document.title =`Count: ${count}`
 },[count])
 
 //jab jab count ki value change hogi console main print hoga ye message bex of useEffect method and iss main timer ka bhi used kar sakt hai
-
+//revise this 
   return (
     <>
 <div>
