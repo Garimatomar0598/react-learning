@@ -1,7 +1,7 @@
 import {createSlice,nanoid} from '@reduxjs/toolkit';
 
 const initialState = {
-    todos:[{id:1,text:"Hello World  by todo"}]
+    todos:[{id:1}]
 }
 
 //to make reducers or slice now
